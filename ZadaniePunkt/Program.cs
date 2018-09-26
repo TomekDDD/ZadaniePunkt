@@ -17,7 +17,15 @@ namespace ZadaniePunkt
             string y1;
             int y2;
 
-            Punkt punkt1 = new Punkt(1, 1);
+            for (int i = 0; i < 20; i++)
+            {
+                Punkt nowaInstancja = new Punkt(i, i);
+
+            }
+
+            Console.WriteLine(Punkt.Licznik);
+
+            /*Punkt punkt1 = new Punkt(1, 1);
             Punkt punkt2 = new Punkt(2, 2);
 
             Punkt punkt3 = punkt1 + punkt2;
@@ -27,10 +35,10 @@ namespace ZadaniePunkt
             punkt4.Wyswietl();
 
             Punkt punkt5 = punkt1 * 2;
-            punkt5.Wyswietl();
+            punkt5.Wyswietl();*/
 
 
-            Punkt XY = new Punkt(5,5); // 2) Współrzędne punktu są ustalane na etapie tworzenia obiektu (konstruktor)
+            //Punkt XY = new Punkt(5,5); // 2) Współrzędne punktu są ustalane na etapie tworzenia obiektu (konstruktor)
 
 
             Console.WriteLine("Tomek");

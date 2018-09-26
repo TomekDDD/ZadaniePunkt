@@ -13,6 +13,8 @@ namespace ZadaniePunkt
         
 
         public int Y { get; private set; }// właściwość 2
+
+        public static int Licznik { get; private set; }
        
 
 
@@ -20,6 +22,7 @@ namespace ZadaniePunkt
         {
             X = wspx;
             Y = wspy;
+            Licznik++;
 
         }
 
@@ -53,6 +56,7 @@ namespace ZadaniePunkt
 
             Console.WriteLine("Współrzędna X: {0}",X);
             Console.WriteLine("Współrzędna Y: {0}",Y);
+
         }
 
         public static Punkt operator +(Punkt p1, Punkt p2) // nie jest to dodawanie fizyczne - jest to tylko definicja operatora "+" dla dodawania klas.
